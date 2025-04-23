@@ -1,22 +1,152 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>meu portifolio</title>
+    <title>Meu portfólio</title>
 </head>
 
 <body>
-    <body>
-        <img src="img/neyma.jpg" alt="avatar do Wesley esquerda" srcset="" />
-        <p>Eu sou Wesley esquerda </p>
-        <h1>Eu jogo bola na cidade</h1>
-        <p>Sou Wesley esquerda tenho 15 anos faço aniversario 16 de junho, já fui joga bola fora
-          
-        </p>
-      </body>
-   </h1>
+    <header class="container text-center">
+        <img src="img/neyma.jpg" alt="avatar da Fernanda" class="rounded-circle" width="150" height="150"
+            srcset="">
+        <p class="lead">Eu sou Wesley_</p>
+        <h1>Eu jogo futebol</h1>
+        <p>Sou estudante, tenho 15 anos, namoro, jogo bola e gosto de carros.</p>
+        <p>Minhas habilidades</p>
+        <div>
+            <p class="badge bg-secondary">jogador</p>
+            <p class="badge bg-secondary">engraçado</p>
+            <p class="badge bg-secondary">persistente</p>
+            <p class="badge bg-secondary">inteligente</p>
+        </div>
+    </header>
+    <main class="container mt-5">
+        <h2>Carros dos sonhos</h2>
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/marea.png" class="card-img-top" alt="Imagem do Marea">
+                    <div class="card-body">
+                        <h5 class="card-title">Marea turbo</h5>
+                        <p class="card-text">Marea foi um carro muito a frente do seu tempo, mas hoje, é um ótimo carro para um projeto.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/divo.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Buggati divo</h5>
+                        <p class="card-text">Um carro muito atual, lançado recentemente com a inteção de bater de frente com o pagani ou superar e se tornar o atual carro mais rápido do mundo.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/galant.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Mitsubishi Galant
+                        </h5>
+                        <p class="card-text">Um carro não tão antigo quanto o marea, mas, também não tão atual quanto a buggati divo, é um carro que por si só ja é muito forte mas pelo fato dele ser carburado abre porta para muitos projetos.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Marea Turbo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Marea turbo, um carro que com toda certeza foi muito a frente do seu tempo,
+                        pois, ele era muito tecnológico, para uma época que não tinha tanta tecnologia para manusear o carro ou até mesmop para fazer suas manutenções,
+                        mas hoje ele é um ótimo carro para um projeto.
+                    </p>
+                    <img src="img/marea.png" class="img-fluid w-100"
+                        alt="Imagem representativa do projeto de uma biblioteca online">
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Buggati Divo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Um carro esportivo, recem lançado mas já muito conhecido por pegar mais de 350 km/h, então já é um carro bem completo para quem gosta de altas velocidades
+                        um carro que original já é muito forte, uma pena que no Brasil ela custa em media 23 milhões de reais, então fica meio fora
+                        de mão para a populção brasileira.
+                    </p>
+                    <img src="img/divo.png" class="img-fluid w-100"
+                        alt="Imagem representativa da divo">
+                </div>
+                <div class="modal-footer">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Mitsubishi galant</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Um carro japonês, que é muito forte, um carro que, você facilmente encontra body kit pois ele tem um formato 
+                        semelhante ao skyline, então reformalo não seria tão dificil,
+                        é um carro que com um projete de stage 2, com um turbina de 3,4 com motor forjado bate facilmente 290 km/h, uma
+                        pena ser tração dianteira, mas o seu motor V6 16V 2.5, abre portas para muitos upgrades de stage.
+                    </p>
+                    <img src="img/galant.png" alt="Projeto 3" class="img-fluid w-100">
+                </div>
+                <div class="modal-footer">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/femascheti">GitHub</a>
+        </div>
+        <p class="my-5 text-center">© Copyright 2025. Produzido por Wesley Oliveira</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
